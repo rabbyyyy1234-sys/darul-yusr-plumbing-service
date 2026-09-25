@@ -18,7 +18,7 @@ export function Solutions() {
       <div className="sticky top-0 flex h-[100svh] flex-col overflow-hidden">
         <motion.div style={{ backgroundColor: hue }} className="pointer-events-none absolute -right-40 top-1/3 h-[60vh] w-[60vh] rounded-full opacity-25 blur-[120px]" />
         <div className="relative z-10 px-5 pt-28 sm:px-8">
-          <p className="mb-3 font-mono text-[11px] tracking-[0.4em] text-glow">[ 03 — SOLUTIONS ]</p>
+          <p className="mb-3 font-mono text-[11px] tracking-[0.4em] text-glow">[ 04 — SOLUTIONS ]</p>
           <h2 className="font-display text-3xl font-bold tracking-tight sm:text-5xl">SOLUTIONS THAT MOVE WITH YOU</h2>
         </div>
         <div className="relative mx-5 mt-6 h-px bg-border sm:mx-8">

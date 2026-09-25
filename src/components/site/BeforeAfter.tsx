@@ -32,7 +32,7 @@ export function BeforeAfter() {
   return (
     <section id="before-after" ref={sec} className="relative overflow-hidden bg-ink py-28 sm:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <p className="mb-5 font-mono text-[11px] tracking-[0.4em] text-glow">[ 04 — BEFORE & AFTER ]</p>
+        <p className="mb-5 font-mono text-[11px] tracking-[0.4em] text-glow">[ 03 — BEFORE & AFTER ]</p>
         <h2 className="mb-14 font-display text-5xl font-bold leading-[0.95] tracking-tight sm:text-7xl">
           {["FROM BEFORE", "TO BETTER."].map((t, i) => (
             <span key={t} className="block overflow-hidden">

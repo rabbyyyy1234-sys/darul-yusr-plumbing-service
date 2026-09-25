@@ -38,8 +38,8 @@ function Index() {
         <Hero ready={!loading} />
         <About />
         <Services />
-        <Solutions />
         <BeforeAfter />
+        <Solutions />
         <Process />
         <Location />
         <Contact />
