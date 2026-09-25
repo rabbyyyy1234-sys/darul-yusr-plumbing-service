@@ -60,7 +60,7 @@ export function Navbar() {
             ))}
           </ul>
           <div className="flex items-center gap-2">
-            <CallButton compact className="hidden sm:inline-flex" />
+            <span className="hidden sm:block"><CallButton compact /></span>
             <button aria-label="Menu" onClick={() => setOpen(true)} className="flex h-10 w-10 items-center justify-center rounded-full bg-deep lg:hidden">
               <Menu className="h-4 w-4" />
             </button>
