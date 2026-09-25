@@ -18,7 +18,7 @@ export function Cursor() {
       x.set(e.clientX);
       y.set(e.clientY);
       const el = (e.target as HTMLElement).closest("[data-cursor], a, button") as HTMLElement | null;
-      setMode(el ? el.dataset.cursor || "arrow" : "");
+      setMode(el ? el.dataset['cursor'] || "arrow" : "");
     };
     window.addEventListener("mousemove", move);
     return () => {

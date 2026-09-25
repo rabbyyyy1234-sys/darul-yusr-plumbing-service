@@ -52,8 +52,8 @@ export function Services() {
                 ) : (
                   <>
                     <div className="font-mono text-[9px] tracking-[0.3em] text-glow">NODE {String(active + 1).padStart(2, "0")}</div>
-                    <div className="mt-2 font-display text-lg font-bold leading-tight lg:text-xl">{SERVICES[active].t}</div>
-                    <div className="mt-2 text-xs leading-relaxed text-foreground/75">{SERVICES[active].d}</div>
+                    <div className="mt-2 font-display text-lg font-bold leading-tight lg:text-xl">{SERVICES[active]?.t}</div>
+                    <div className="mt-2 text-xs leading-relaxed text-foreground/75">{SERVICES[active]?.d}</div>
                   </>
                 )}
               </motion.div>

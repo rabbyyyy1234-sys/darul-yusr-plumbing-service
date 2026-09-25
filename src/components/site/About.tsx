@@ -46,7 +46,7 @@ export function About() {
               style={{ pathLength: draw, filter: "drop-shadow(0 0 6px var(--glow))" }}
             />
             <path d="M40 40 H200 V160 H340 V300 H120 V440 H360" fill="none" stroke="var(--foreground)" strokeOpacity=".08" strokeWidth="14" strokeLinejoin="round" />
-            {[[200, 40], [200, 160], [340, 160], [340, 300], [120, 300], [120, 440]].map(([x, y], i) => (
+            {[[200, 40], [200, 160], [340, 160], [340, 300], [120, 300], [120, 440]].map(([x = 0, y = 0], i) => (
               <g key={i}>
                 <rect x={x - 8} y={y - 8} width="16" height="16" fill="var(--charcoal)" stroke="var(--glow)" strokeOpacity=".7" />
                 <text x={x + 14} y={y - 12} fill="var(--muted-foreground)" fontSize="9" fontFamily="JetBrains Mono">J-{String(i + 1).padStart(2, "0")}</text>
