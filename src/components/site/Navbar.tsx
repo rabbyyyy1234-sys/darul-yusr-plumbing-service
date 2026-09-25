@@ -40,8 +40,8 @@ export function Navbar() {
           }`}
         >
           <a href="#home" className="flex flex-col leading-none">
-            <span className="font-display text-base font-extrabold tracking-tight">DARUL YUSR</span>
-            <span className="mt-0.5 font-mono text-[8px] tracking-[0.35em] text-glow">PLUMBING SERVICES</span>
+            <span className="whitespace-nowrap font-display text-sm font-extrabold tracking-tight sm:text-base">DARUL YUSR</span>
+            <span className="mt-0.5 whitespace-nowrap font-mono text-[7px] sm:text-[8px] tracking-[0.35em] text-glow">PLUMBING SERVICES</span>
           </a>
           <ul className="hidden items-center gap-1 lg:flex">
             {NAV.map((n) => (

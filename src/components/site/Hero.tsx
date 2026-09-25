@@ -104,7 +104,7 @@ export function Hero({ ready }: { ready: boolean }) {
           <span className="font-mono text-[10px] tracking-[0.3em] text-glow">DARUL YUSR PLUMBING SERVICES</span>
         </motion.div>
 
-        <h1 className="relative font-display text-[13vw] font-extrabold leading-[0.9] tracking-tight sm:text-[10vw] lg:text-[8.2rem]">
+        <h1 className="relative font-display text-[9.6vw] font-extrabold leading-[0.92] tracking-tight sm:text-[8vw] lg:text-[6.6rem]">
           <motion.span
             aria-hidden
             className="absolute -inset-x-10 top-1/2 -z-10 h-1/2 -translate-y-1/2 bg-[linear-gradient(90deg,transparent,color-mix(in_oklab,var(--brand)_50%,transparent),transparent)] blur-3xl"

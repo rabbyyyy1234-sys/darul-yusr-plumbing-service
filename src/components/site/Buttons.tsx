@@ -60,7 +60,7 @@ export function CallButton({ className = "", compact = false }: { className?: st
       href="tel:+5926122732"
       whileTap={{ scale: 0.94 }}
       data-cursor="arrow"
-      className={`group relative inline-flex items-center gap-2.5 rounded-full bg-brand font-mono font-medium tracking-[0.18em] text-primary-foreground shadow-[0_0_30px_-6px_var(--brand)] transition-shadow hover:shadow-[0_0_44px_-4px_var(--glow)] ${compact ? "px-4 py-2.5 text-[10px]" : "px-6 py-4 text-xs"} ${className}`}
+      className={`group relative inline-flex shrink-0 items-center gap-2.5 whitespace-nowrap rounded-full bg-brand font-mono font-medium tracking-[0.18em] text-primary-foreground shadow-[0_0_30px_-6px_var(--brand)] transition-shadow hover:shadow-[0_0_44px_-4px_var(--glow)] ${compact ? "px-4 py-2.5 text-[10px]" : "px-6 py-4 text-xs"} ${className}`}
     >
       <span className="relative flex h-5 w-5 items-center justify-center">
         <span className="absolute inset-0 rounded-full bg-glow/60" style={{ animation: "ring-pulse 1.8s ease-out infinite" }} />
