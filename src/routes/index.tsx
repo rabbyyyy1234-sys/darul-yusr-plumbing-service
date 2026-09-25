@@ -1,24 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import { Loader } from "@/components/site/Loader";
+import { Navbar } from "@/components/site/Navbar";
+import { Cursor } from "@/components/site/Cursor";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Services } from "@/components/site/Services";
+import { Solutions } from "@/components/site/Solutions";
+import { BeforeAfter } from "@/components/site/BeforeAfter";
+import { Process } from "@/components/site/Process";
+import { Location } from "@/components/site/Location";
+import { Contact, Footer } from "@/components/site/Contact";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Darul Yusr Plumbing Services — Georgetown, Guyana" },
+      { name: "description", content: "Professional plumbing and technical solutions from Mon Repos Pasture, East Coast of Demerara. Call +592 612 2732." },
+      { property: "og:title", content: "Darul Yusr Plumbing Services" },
+      { property: "og:description", content: "Professional plumbing and technical solutions in Georgetown, Guyana." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const [loading, setLoading] = useState(true);
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <AnimatePresence>{loading && <Loader onDone={() => setLoading(false)} />}</AnimatePresence>
+      <Cursor />
+      <Navbar />
+      <main>
+        <Hero ready={!loading} />
+        <About />
+        <Services />
+        <Solutions />
+        <BeforeAfter />
+        <Process />
+        <Location />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
